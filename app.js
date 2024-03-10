@@ -30,13 +30,11 @@ function playSound() {
         mySound.pause();
         play.classList.remove('active')
         pause.classList.add('active')
-        return
     }
 
+    document.addEventListener('DOMContentLoaded', function() {
+        mySound.play();
+    });
 }
 
 playSound()
-
-document.addEventListener('DOMContentLoaded', function() {
-    mySound.play();
-});
