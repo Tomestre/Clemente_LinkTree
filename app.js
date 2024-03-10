@@ -19,7 +19,7 @@ function playSound() {
             backgroundLogo.style.background = ''
             return
         }
-    }, 5000)
+    }, 3000)
 
     if (mySound.paused) {
         mySound.play();
