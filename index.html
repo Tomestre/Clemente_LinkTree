@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clemente Dutervil</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="hero_background">
+            <video style="width: 100%; height: 100%;" src="./src/img/background.mp4" autoplay loop muted ></video>
+            <div class="background-transparent"></div>
+    </div>
+    <section>        
+        <div class="logo_player" onclick="playSound()">
+            <audio id="mySound" src="./src/img/Regional Candango - Santo Antônio ( Hermeto Paschoal ) AO VIVO na Galeria Mundo Vivo (Brasília-DF).mp3" ></audio>
+            <div id="music-icon" onclick="togglePlayPause()">
+                <svg id="play" width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.5 2.0625C8.52715 2.0625 2.0625 8.52715 2.0625 16.5C2.0625 24.4729 8.52715 30.9375 16.5 30.9375C24.4729 30.9375 30.9375 24.4729 30.9375 16.5C30.9375 8.52715 24.4729 2.0625 16.5 2.0625ZM16.5 28.4883C9.88066 28.4883 4.51172 23.1193 4.51172 16.5C4.51172 9.88066 9.88066 4.51172 16.5 4.51172C23.1193 4.51172 28.4883 9.88066 28.4883 16.5C28.4883 23.1193 23.1193 28.4883 16.5 28.4883Z" fill="white"/>
+                    <path d="M23.1838 16.0845L13.6415 9.15578C13.565 9.09968 13.4744 9.06593 13.3798 9.0583C13.2852 9.05067 13.1904 9.06945 13.1058 9.11255C13.0213 9.15566 12.9504 9.22139 12.901 9.30242C12.8516 9.38346 12.8257 9.47661 12.8262 9.5715V23.4289C12.8262 23.8511 13.3031 24.0896 13.6415 23.8446L23.1838 16.9159C23.2497 16.8685 23.3033 16.806 23.3403 16.7337C23.3773 16.6615 23.3966 16.5814 23.3966 16.5002C23.3966 16.419 23.3773 16.339 23.3403 16.2667C23.3033 16.1944 23.2497 16.132 23.1838 16.0845ZM14.8822 20.4028V12.5976L20.2544 16.5002L14.8822 20.4028Z" fill="white"/>
+                </svg>
+                <svg id="pause" width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.5 2.0625C8.52715 2.0625 2.0625 8.52715 2.0625 16.5C2.0625 24.4729 8.52715 30.9375 16.5 30.9375C24.4729 30.9375 30.9375 24.4729 30.9375 16.5C30.9375 8.52715 24.4729 2.0625 16.5 2.0625ZM16.5 28.4883C9.88066 28.4883 4.51172 23.1193 4.51172 16.5C4.51172 9.88066 9.88066 4.51172 16.5 4.51172C23.1193 4.51172 28.4883 9.88066 28.4883 16.5C28.4883 23.1193 23.1193 28.4883 16.5 28.4883ZM13.6641 11.3438H12.1172C11.9754 11.3438 11.8594 11.4598 11.8594 11.6016V21.3984C11.8594 21.5402 11.9754 21.6562 12.1172 21.6562H13.6641C13.8059 21.6562 13.9219 21.5402 13.9219 21.3984V11.6016C13.9219 11.4598 13.8059 11.3438 13.6641 11.3438ZM20.8828 11.3438H19.3359C19.1941 11.3438 19.0781 11.4598 19.0781 11.6016V21.3984C19.0781 21.5402 19.1941 21.6562 19.3359 21.6562H20.8828C21.0246 21.6562 21.1406 21.5402 21.1406 21.3984V11.6016C21.1406 11.4598 21.0246 11.3438 20.8828 11.3438Z" fill="white"/>
+                </svg>
+            </div>
+            <img id="logo_png" width="150" src="./src/img/image_1-removebg-preview.png" alt="">
+        </div>
+        <div class="container">
+            <h1>Clemente Dutervil</h1>
+        <ul>
+            <a href="http://"><li><img src="./src/img/BookOutlined.svg" alt="">O manual do músico de rua</li></a>
+            <a href="http://"><li><img src="./src/img/BulbOutlined.svg" alt="">Aula Particular</li></a>
+            <a href="http://"><li><img src="./src/img/TeamOutlined.svg" alt="">Mentoria</li></a>
+        </ul>
+        </div>
+        
+        <div class="icons">
+            <img src="./src/img/WhatsAppOutlined.svg" alt="zap">
+            <img src="./src/img/YoutubeOutlined.svg" alt="youtube">
+        </div>
+    </section>
+    <script src="./app.js"></script>
+</body>
+</html>
