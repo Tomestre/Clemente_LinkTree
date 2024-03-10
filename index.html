@@ -13,10 +13,10 @@
 </head>
 <body>
     <div class="hero_background">
-        <video style="width: 100%; height: 100%;" src="./src/img/background.mp4" autoplay loop muted >
+        <video id="video1 style="width: 100%; height: 100%;" src="./src/img/background.mp4" autoplay loop muted >
             <img style="height: 100%;" src="./src/img/background img.jpg" alt="background">
         </video>
-        <video style="width: 100%; height: 100%;" src="./src/img/background.webm" autoplay loop muted >
+        <video id="video2 style="width: 100%; height: 100%;" src="./src/img/background.webm" autoplay loop muted >
             
         </video>
         
@@ -51,5 +51,18 @@
         </div>
     </section>
     <script src="./app.js"></script>
+    <script>
+        var video1 = document.getElementById('video1');
+        var video2 = document.getElementById('video2');
+
+        // Verifique a compatibilidade do segundo vídeo
+        if (video2.canPlayType('video/webm')) {
+            // O navegador suporta o formato webm, então carregue o segundo vídeo
+            video1.style.display = 'none'; // Oculte o primeiro vídeo
+        } else {
+            // O navegador não suporta o formato webm, então carregue o primeiro vídeo
+            video2.style.display = 'none'; // Oculte o segundo vídeo
+        }
+    </script>
 </body>
 </html>
