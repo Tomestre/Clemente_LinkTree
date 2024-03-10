@@ -10,20 +10,6 @@ backgroundLogo.style.background = '#22585f'
 
 function playSound() {
 
-    setTimeout(() => {
-        if (logoPlayer.style.display === 'none') {
-            logoPlayer.style.display = '';
-            logoPng.style.display = 'none';
-            backgroundLogo.style.background = '#22585f'
-            
-        } else {
-            logoPlayer.style.display = 'none';
-            logoPng.style.display = 'block';
-            backgroundLogo.style.background = ''
-            return
-        }
-    }, 5000)
-
     if (mySound.paused) {
         mySound.play();
         play.classList.add('active')
@@ -50,7 +36,7 @@ setInterval(() => {
         backgroundLogo.style.background = ''
         return
     }
-}, 10000);
+}, 7000);
 
 playSound()
 mySound.play()
