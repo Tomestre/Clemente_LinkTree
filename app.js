@@ -1,5 +1,5 @@
+const mySound = document.getElementById("mySound");
 function playSound() {
-    const mySound = document.getElementById("mySound");
     const play = document.getElementById('play');
     const pause = document.getElementById("pause")
     const logoPlayer = document.getElementById('music-icon')
@@ -37,4 +37,6 @@ function playSound() {
 
 playSound()
 
-
+document.addEventListener('DOMContentLoaded', function() {
+    mySound.play();
+});
