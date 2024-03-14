@@ -7,7 +7,7 @@ body{
     color:rgba(252, 250, 255, 1);
     font-family: "Inter", sans-serif;
     background-color: #F2E4C9;
-    overflow: hidden;
+    overflow-x: hidden;
     text-align: center;
     
 
@@ -46,6 +46,7 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-y:auto;
 }
 
 .logo_player{
@@ -55,7 +56,7 @@ section{
     height: 150px;
     background-size: cover;
     border: 1px solid rgba(252, 250, 255, 1);
-    margin-top: 120px;
+    margin-top: 30px;
     cursor: pointer;
     position: relative;
     
@@ -81,12 +82,22 @@ section{
     height: 80px;
 }
 
+
+
 #play{
     display: none;
 }
 
+#play:active{
+    transform: scale(0.8);
+}
+
 #pause{
     display: none;
+}
+
+#pause:active{
+    transform: scale(0.8);
 }
 
 .active{
@@ -113,8 +124,9 @@ li{
     grid-template-columns: 35px auto;
     align-items: center;
     gap: 30px;
-    
-   
+}
+svg path{
+    fill: #ffffff;
 }
 
 a{
@@ -130,20 +142,50 @@ li:hover{
     display: flex;
     margin-top: 30px;
     gap: 15px;
+    align-items: center;
 }
 
 .icons img{
     cursor: pointer;
 }
 
+#zap path{
+    fill: #ffffff;
+}
+
+#zap:hover path{
+    fill: rgb(50, 176, 66);
+    stroke: none;
+}
+
+#youtube path{
+    fill: #ffffff;
+}
+
+#youtube:hover path{
+    fill: rgb(255, 4, 0);
+    stroke: none;
+}
+
+#facebook path{
+    fill: #ffffff;
+}
+
+#facebook:hover path{
+    fill: rgb(34, 57, 186);
+    stroke: none;
+}
+
+#insta path{
+    fill: #ffffff;
+}
+
+#insta:hover path{
+    fill: rgb(198, 16, 171);
+    stroke: none;
+}
 
 @media screen and (max-height: 750px) {
-    section{
-        transform: scale(0.8);
-    }
-    .logo_player{
-        margin-top: 60px;
-    }
     .hero_background{
         transform: scale(1.2);
     }

@@ -8,18 +8,19 @@ const pause = document.getElementById("pause")
 
 backgroundLogo.style.background = '#22585f'
 
+
 function playSound() {
 
 
     if (mySound.paused) {
         mySound.play();
-        play.classList.add('active')
-        pause.classList.remove('active')
+        play.classList.remove('active')
+        pause.classList.add('active')
         return
     } else {
         mySound.pause();
-        play.classList.remove('active')
-        pause.classList.add('active')
+        play.classList.add('active')
+        pause.classList.remove('active')
     }
 
 
@@ -37,7 +38,8 @@ setInterval(() => {
         backgroundLogo.style.background = ''
         return
     }
+
 }, 7000);
 
-playSound()
-mySound.play()
+play.classList.add('active')
+pause.classList.remove('active')
