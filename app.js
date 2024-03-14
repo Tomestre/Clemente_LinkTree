@@ -43,3 +43,14 @@ setInterval(() => {
 
 play.classList.add('active')
 pause.classList.remove('active')
+
+
+document.getElementById('soundcloudLink').addEventListener('click', function() {
+    // Seleciona as tags <a> com a classe .soundcloud
+    var soundcloudLinks = this.getElementsByClassName('soundcloud');
+
+    // Adiciona a classe 'show' para fazer as tags <a> com a classe .soundcloud aparecerem com a animação
+    for (var i = 0; i < soundcloudLinks.length; i++) {
+        soundcloudLinks[i].classList.toggle('show');
+    }
+});

@@ -43,8 +43,8 @@ h1{
 section{
     position: relative;
     z-index: 0;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    justify-items: center;
     align-items: center;
     overflow-y:auto;
 }
@@ -113,6 +113,7 @@ ul{
     list-style: none;
     padding: 0;
     margin-top: 60px;
+    margin-bottom: 0;
 }
 
 li{
@@ -136,6 +137,32 @@ a{
 
 li:hover{
     transform: scale(1.1);
+}
+
+#soundcloudLink p {
+    grid-row: 1; /* Coloca a tag p na primeira linha */
+    grid-column: 2;
+}
+
+/* Inicialmente, as tags <p> estão ocultas */
+.soundcloud {
+    display: none;
+}
+
+/* Animação para fazer as tags <p> aparecerem suavemente */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Aplica a animação às tags <p> */
+img.show {
+    display: block;
+    animation: fadeIn 0.5s ease-in;
 }
 
 .icons{
